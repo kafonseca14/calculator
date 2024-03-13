@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(./assets/cartoon-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 336px;
+}
+
+.display {
+    background-color: #3b3b4f;
+    height: 55px;
+    color: #fff;
+    font-size: 40px;
+    padding: 14px;
+    text-align: end;
+    border-radius: 7px 7px 0 0;
+}
+
+.key-operators {
+    width: 336px;
+    display: flex;
+}
+
+.operators {
+    width: 25%;
+}
+
+.operators:focus{
+    background-color: #d3d3d5;
+}
+
+.key-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.key-numbers button {
+    width: calc(100% / 3);
+}
+
+.key-numbers button:nth-last-child(3) {
+    border-radius: 0 0 0 7px;
+}
+
+.box-numbers-equal {
+    display: flex;
+}
+
+button {
+    height: 50px;
+    border: 0.5px solid #d3d3d5;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d3d3d5;
+    transition: all 0.2s ease-in-out;
+}
+
+#equal-sign {
+    height: 200px;
+    width: 25%;
+    border-radius: 0 0 7px 0;
+}
+
