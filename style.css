@@ -7,32 +7,44 @@
 body {
     min-height: 100vh;
     background: url(./assets/cartoon-background.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 336px;
+    width: 357px;
+    border-radius: 7px;
+    background-color: coral;
+    padding: 47px 30px;
 }
 
 .display {
+    margin-bottom: 23px;
     background-color: #3b3b4f;
     height: 55px;
     color: #fff;
     font-size: 40px;
     padding: 14px;
     text-align: end;
-    border-radius: 7px 7px 0 0;
+    border-radius: 7px;
 }
 
 .key-operators {
-    width: 336px;
     display: flex;
 }
 
 .operators {
     width: 25%;
+}
+
+.operators:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.operators:last-child {
+    border-radius: 0 7px 0 0;
 }
 
 .operators:focus{
